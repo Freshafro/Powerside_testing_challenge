@@ -40,15 +40,6 @@ class LoginPage extends BaseUtils {
     cy.get(this.loginButton).click()
   }
 
-  // Page assertions
-  shouldBeLoggedIn() {
-    cy.url().should('not.include', '/login')
-    cy.url().should('include', this.url)
-    cy.get('body').should('not.contain', 'Login')
-    cy.get('body').should('not.contain', 'Username')
-    cy.get('body').should('not.contain', 'Password')
-  }
-
   shouldShowError() {
     cy.get(this.errorMessage).should('be.visible')
   }
