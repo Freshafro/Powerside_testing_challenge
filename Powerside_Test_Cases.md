@@ -159,7 +159,20 @@
 
 ## 4. Library Management Tests
 
-### TC-015: Hot book View
+### TC-015: Sort Options
+**Objective**: Verify sorting functionality
+**Pre-requisite**:
+- Logged in to the application
+- On the Books view
+**Test Steps**:
+1. Test sort by book date
+2. Test sort title by alphabetical order
+3. Test sort authors by alphabetical order
+4. Test sort by publishing date
+**Expected Result**: Books are sorted according to selected criteria
+**Priority**: Medium
+
+### TC-016: Hot book View
 **Objective**: Verify hot books grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -168,7 +181,7 @@
 **Expected Result**: Books are properly displayed by most downloaded
 **Priority**: Medium
 
-### TC-016: Downloaded books View
+### TC-017: Downloaded books View
 **Objective**: Verify downloaded books grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -177,7 +190,7 @@
 **Expected Result**: Books having been downloaded are displayed
 **Priority**: Medium
 
-### TC-017: Top rated books view
+### TC-018: Top rated books view
 **Objective**: Verify top rated books grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -186,7 +199,7 @@
 **Expected Result**: Books are properly displayed by their rating
 **Priority**: Medium
 
-### TC-018: Read books view
+### TC-019: Read books view
 **Objective**: Verify read books grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -195,7 +208,7 @@
 **Expected Result**: Books having the mark of "read" are displayed
 **Priority**: Medium
 
-### TC-019: Unread books view
+### TC-020: Unread books view
 **Objective**: Verify unread books grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -204,7 +217,7 @@
 **Expected Result**: Books that don't have the mark of "read" are displayed
 **Priority**: Medium
 
-### TC-020: Discover view
+### TC-021: Discover view
 **Objective**: Verify random books grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -213,7 +226,7 @@
 **Expected Result**: Books that have been randomly selected are displayed
 **Priority**: Medium
 
-### TC-021: Categories view
+### TC-022: Categories view
 **Objective**: Verify categories grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -222,7 +235,7 @@
 **Expected Result**: Books belonging to the chosen category are displayed
 **Priority**: Medium
 
-### TC-022: Series view
+### TC-023: Series view
 **Objective**: Verify series grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -231,7 +244,7 @@
 **Expected Result**: Books belonging to a chosen series are displayed
 **Priority**: Medium
 
-### TC-023: Authors View
+### TC-024: Authors View
 **Objective**: Verify author grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -240,7 +253,7 @@
 **Expected Result**: Books are properly grouped by author
 **Priority**: Medium
 
-### TC-024: Publishers view
+### TC-025: Publishers view
 **Objective**: Verify publisher grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -249,7 +262,7 @@
 **Expected Result**: Books are properly grouped by their publishers
 **Priority**: Medium
 
-### TC-025: Languages view
+### TC-026: Languages view
 **Objective**: Verify languages grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -258,7 +271,7 @@
 **Expected Result**: Books are properly grouped by their languages
 **Priority**: Medium
 
-### TC-026: Ratings view
+### TC-027: Ratings view
 **Objective**: Verify ratings grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -267,7 +280,7 @@
 **Expected Result**: Books that have a rating should be displayed
 **Priority**: Medium
 
-### TC-027: File formats view
+### TC-028: File formats view
 **Objective**: Verify file formats grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -276,7 +289,7 @@
 **Expected Result**: Books with the chosen format are being displayed
 **Priority**: Medium
 
-### TC-028: Archived books view
+### TC-029: Archived books view
 **Objective**: Verify archived books grouping functionality
 **Test Steps**:
 1. Login to the application
@@ -285,26 +298,13 @@
 **Expected Result**: Books that have been archived should be displayed
 **Priority**: Medium
 
-### TC-029: Books list view
+### TC-030: Books list view
 **Objective**: Verify books list grouping functionality
 **Test Steps**:
 1. Login to the application
 2. Navigate to the books list view
 3. Select/Unselect books
 **Expected Result**: Books should be able to be selected or unselected
-**Priority**: Medium
-
-### TC-030: Sort Options
-**Objective**: Verify sorting functionality
-**Pre-requisite**:
-- Logged in to the application
-- On the Books view
-**Test Steps**:
-1. Test sort by title (A-Z, Z-A)
-2. Test sort by author
-3. Test sort by date added
-4. Test sort by rating
-**Expected Result**: Books are sorted according to selected criteria
 **Priority**: Medium
 
 ---
@@ -416,6 +416,7 @@
 **Severity**: [Critical/High/Medium/Low]
 **Priority**: [Critical/High/Medium/Low]
 **Environment**: [Browser, OS, Device]
+**Description**:
 **Steps to Reproduce**:
 1. [Step 1]
 2. [Step 2]
@@ -439,7 +440,7 @@
 | Error Handling | 2 | - | - | - |
 | Performance | 2 | - | - | - |
 | Security | 2 | - | - | - |
-| **Total** | **39** | **-** | **-** | **-** |
+| **Total** | **37** | **-** | **-** | **-** |
 
 ---
 
