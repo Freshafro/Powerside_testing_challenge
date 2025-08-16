@@ -3,9 +3,7 @@
 ## Application Information
 - **Application**: Calibre-Web
 - **URL**: https://testapp1.andresfloresv.com/
-- **Test Credentials**: 
-  - Username: Test_user1
-  - Password: 8ebAS@Ui
+- **Test Credentials**: Give to user via secure method
 
 ## Test Environment
 - **Browser**: Chrome, Firefox, Safari, Edge
