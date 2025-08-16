@@ -52,7 +52,7 @@
 2. Leave password field empty
 3. Click "Login" button
 **Expected Result**: Validation error message displayed
-**Priority**: Medium
+**Priority**: High
 
 ### TC-005: Remember Me Functionality
 **Objective**: Verify "Remember Me" checkbox works
@@ -308,11 +308,21 @@
 **Expected Result**: Books should be able to be selected or unselected
 **Priority**: Medium
 
+### TC-031: Create shelf 
+**Objective**: Very creation of shelf is successful
+**Test Steps**:
+1. Login to the application
+2. Locate the "Create a Shelf" button and click on it
+3. Enter the title.
+4. Click on "Save".
+**Expected Result**: A shelf should be created
+**Priority**: Medium
+
 ---
 
 ## 5. User Interface Tests
 
-### TC-031: Book Cover Display
+### TC-032: Book Cover Display
 **Objective**: Verify book covers are displayed correctly
 **Test Steps**:
 1. Login to the application
@@ -326,20 +336,12 @@
 
 ## 6. Error Handling Tests
 
-### TC-032: Network Error Handling
+### TC-033: Network Error Handling
 **Objective**: Verify application handles network issues gracefully
 **Test Steps**:
 1. Simulate network disconnection
 2. Attempt to perform actions
 **Expected Result**: Appropriate error messages are displayed
-**Priority**: Medium
-
-### TC-033: Invalid Book Data
-**Objective**: Verify handling of corrupted book data
-**Test Steps**:
-1. Attempt to open books with missing metadata
-2. Attempt to download corrupted files
-**Expected Result**: Error messages are displayed, application doesn't crash
 **Priority**: Medium
 
 ---
@@ -436,9 +438,9 @@
 | Authentication | 6 | - | - | - |
 | Navigation & UI | 3 | - | - | - |
 | Book Management | 5 | - | - | - |
-| Library Management | 16 | - | - | - |
+| Library Management | 17 | - | - | - |
 | User Interface | 1 | - | - | - |
-| Error Handling | 2 | - | - | - |
+| Error Handling | 1 | - | - | - |
 | Performance | 2 | - | - | - |
 | Security | 2 | - | - | - |
 | **Total** | **37** | **-** | **-** | **-** |

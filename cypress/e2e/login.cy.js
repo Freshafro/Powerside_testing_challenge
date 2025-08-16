@@ -1,9 +1,11 @@
 import LoginPage from '../support/pages/LoginPage'
 import HomePage from '../support/pages/HomePage'
+import BaseUtils from '../support/utils/BaseUtils'
 
 describe('Powerside Login Tests', () => {
   const loginPage = new LoginPage()
   const homePage = new HomePage()
+  const baseUtils = new BaseUtils()
   const validUsername = Cypress.env('username')
   const validPassword = Cypress.env('password')
   const invalidUsername = 'InvalidUser'
@@ -16,12 +18,10 @@ describe('Powerside Login Tests', () => {
 
   afterEach(() => {
     // Clear any stored data after each test
-    cy.clearLocalStorage()
-    cy.clearCookies()
+    baseUtils.clearSession()
   })
 
   it('TC-001: should successfully login with valid credentials and redirect to dashboard', () => {
-    // Test Steps 1-4 from TC-001
     loginPage.login(validUsername, validPassword)
 
     // Expected Result: User is successfully logged in and redirected to main dashboard
@@ -29,7 +29,6 @@ describe('Powerside Login Tests', () => {
   })
 
   it('TC-002: should display error message for invalid username', () => {
-    // Test Steps 1-3 from TC-002
     loginPage.login(invalidUsername, validPassword)
 
     // Expected Result: Error message displayed, user remains on login page
@@ -37,7 +36,6 @@ describe('Powerside Login Tests', () => {
   })
 
   it('TC-003: should display error message for invalid password', () => {
-    // Test Steps 1-3 from TC-003
     loginPage.login(validUsername, invalidPassword)
 
     // Expected Result: Error message displayed, user remains on login page
@@ -45,7 +43,6 @@ describe('Powerside Login Tests', () => {
   })
 
   it('TC-004: should display validation error for empty username and password', () => {
-    // Test Steps 1-3 from TC-004
     loginPage.attemptLoginWithEmptyFields()
 
     // Expected Result: Validation error message displayed
