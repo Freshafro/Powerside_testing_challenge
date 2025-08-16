@@ -4,7 +4,7 @@
 
 This report summarizes the automated testing implementation and findings regarding the Powerside web application challenge using Cypress testing framework. The testing suite covers login functionality, navigation features, shelf management, and book operations following Page Object Model (POM) design pattern.
 
-**Project Duration**: [Start Date] - [End Date]  
+**Project Duration**: August 15th, 2025 to August 17th, 2025 
 **Testing Framework**: Cypress  
 **Design Pattern**: Page Object Model (POM)  
 **Application**: Powerside testing challenge (https://testapp1.andresfloresv.com/)  
