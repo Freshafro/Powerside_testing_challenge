@@ -7,7 +7,7 @@ This repository contains automated tests for the Powerside web application chall
 - **Application Under Test**: Powerside testing challenge (https://testapp1.andresfloresv.com/)
 - **Testing Framework**: Cypress
 - **Design Pattern**: Page Object Model (POM)
-- **Test Coverage**: Login/logout functionality
+- **Test Coverage**: Authentication, navigation, and core application features
 
 ## 📁 Project Structure
 
@@ -15,22 +15,31 @@ This repository contains automated tests for the Powerside web application chall
 Powerside_testing_challenge/
 ├── cypress/
 │   ├── e2e/
-│   │   └── login.cy.js          # Login test cases
+│   │   ├── authentication.cy.js     # Authentication test cases
+│   │   ├── navigation.cy.js         # Navigation test cases
+│   │   ├── feature-a.cy.js          # Feature A test cases
+│   │   └── feature-b.cy.js          # Feature B test cases
 │   ├── support/
 │   │   ├── pages/
-│   │   │   ├── LoginPage.js     # Login page object
-│   │   │   └── HomePage.js      # Home page object
+│   │   │   ├── LoginPage.js         # Login page object
+│   │   │   ├── HomePage.js          # Home page object
+│   │   │   ├── NavigationPage.js    # Navigation page object
+│   │   │   ├── FeaturePage.js       # Feature page object
+│   │   │   └── CommonPage.js        # Common page object
 │   │   └── utils/
-│   │       └── BaseUtils.js     # Common utility methods
-│   └── fixtures/                 # Test data files
-├── .env                          # Environment variables (not committed)
-├── .env.example                  # Environment variables template
-├── .gitignore                    # Git ignore rules
-├── cypress.config.js             # Cypress configuration
-├── package.json                  # Project dependencies
-├── Powerside_Test_Cases.md       # Manual test cases documentation
-├── Found_issues.md               # Bug reports and issues found
-└── README.md                     # This file
+│   │       └── BaseUtils.js         # Common utility methods
+│   ├── fixtures/                     # Test data files
+│   ├── videos/                       # Test execution videos
+│   └── screenshots/                  # Test failure screenshots
+├── .env                              # Environment variables (not committed)
+├── .env.example                     # Environment variables template
+├── .gitignore                       # Git ignore rules
+├── cypress.config.js                # Cypress configuration
+├── package.json                     # Project dependencies
+├── test-cases.md                    # Manual test cases documentation
+├── bug-reports.md                   # Bug reports and issues found
+├── test-execution-report.md         # Comprehensive test execution report
+└── README.md                        # This file
 ```
 
 ## 🛠️ Prerequisites
@@ -129,8 +138,11 @@ npx cypress run
 ### Page Object Model (POM)
 The project follows the Page Object Model design pattern:
 
-- **`LoginPage.js`**: Encapsulates login page elements and actions
-- **`HomePage.js`**: Handles post-login page interactions
+- **`LoginPage.js`**: Encapsulates authentication page elements and actions
+- **`HomePage.js`**: Handles main application page interactions
+- **`NavigationPage.js`**: Manages navigation between different pages
+- **`FeaturePage.js`**: Handles specific feature operations and interactions
+- **`CommonPage.js`**: Manages common page elements and actions
 - **`BaseUtils.js`**: Provides common utility methods
 
 ### Benefits of POM
