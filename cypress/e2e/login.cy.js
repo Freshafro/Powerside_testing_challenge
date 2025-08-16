@@ -4,8 +4,8 @@ import HomePage from '../support/pages/HomePage'
 describe('Powerside Login Tests', () => {
   const loginPage = new LoginPage()
   const homePage = new HomePage()
-  const validUsername = 'Test_user1'
-  const validPassword = '?rUqnq9n'
+  const validUsername = Cypress.env('username')
+  const validPassword = Cypress.env('password')
   const invalidUsername = 'InvalidUser'
   const invalidPassword = 'WrongPassword'
 
@@ -52,13 +52,13 @@ describe('Powerside Login Tests', () => {
     loginPage.shouldShowError()
   })
 
-  it('TC-005: should display validation error for empty username only', () => {
+  it('Should display validation error for empty username only', () => {
     loginPage.attemptLoginWithEmptyUsername(validPassword)
 
     loginPage.shouldShowError()
   })
 
-  it('TC-006: should display validation error for empty password only', () => {
+  it('Should display validation error for empty password only', () => {
     loginPage.attemptLoginWithEmptyPassword(validUsername)
 
     loginPage.shouldShowError()

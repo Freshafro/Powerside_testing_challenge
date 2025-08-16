@@ -43,6 +43,10 @@ class LoginPage extends BaseUtils {
   shouldShowError() {
     cy.get(this.errorMessage).should('be.visible')
   }
+
+  shouldShowLoginPage() {
+    cy.get(this.loginHeading).should('be.visible')
+  }
 }
 
 export default LoginPage

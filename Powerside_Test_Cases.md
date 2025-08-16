@@ -75,13 +75,14 @@
 
 ## 2. Navigation & UI Tests
 
-### TC-007: Toggle Navigation
-**Objective**: Verify navigation menu toggle functionality
+### TC-007: Logout functionality
+**Objective**: Verify logout from application
 **Test Steps**:
 1. Login to application
-2. Click navigation toggle button
-**Expected Result**: Navigation menu expands/collapses
-**Priority**: Medium
+2. Locate the logout button
+2. Click the logout button
+**Expected Result**: User should be successfully logged out of the application
+**Priority**: High
 
 ### TC-008: Responsive Design
 **Objective**: Verify application works on different screen sizes
