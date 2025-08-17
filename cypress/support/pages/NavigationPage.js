@@ -19,6 +19,7 @@ class NavigationPage extends BaseUtils {
   archivedBooksLink = '#nav_archived'
   booksListLink = '#nav_list'
   createShelfLink = '#nav_createshelf'
+  listOfNavLinks = '#scnd-nav'
 
   // Page actions
   navigateToBooks() {
@@ -89,6 +90,10 @@ class NavigationPage extends BaseUtils {
   
   navigateToCreateShelf() {
     cy.get(this.createShelfLink).click()
+  }
+
+  elementIsVisibleInListOfNavLinks(element) {
+    cy.get(this.listOfNavLinks).contains(element).should('be.visible')
   }
 }
 

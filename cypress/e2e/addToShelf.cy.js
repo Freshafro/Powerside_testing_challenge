@@ -34,7 +34,6 @@ describe('Add a book to a shelf', () => {
 
     cy.get('a').contains(shelfTitle).click()
 
-    // cy.get('span').contains(bookTitle).should('be.visible')
     cy.get('p').contains(bookTitle).parent('a').should('be.visible')
   })
 })

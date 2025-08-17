@@ -261,10 +261,6 @@ For questions or issues:
 3. Check existing issues in the repository
 4. Create a new issue with detailed information
 
-## 📄 License
-
-This project is part of the Powerside Testing Challenge and is intended for educational and testing purposes.
-
 ---
 
 **Happy Testing! 🧪✨**

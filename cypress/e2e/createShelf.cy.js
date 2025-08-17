@@ -29,5 +29,6 @@ describe('Create a shelf', () => {
     createShelf.userShouldBeOnCreateShelfPage()
     createShelf.createShelf(shelfTitle)
     createShelf.userShouldSeeSuccessMessage(shelfTitle)
+    navigationPage.elementIsVisibleInListOfNavLinks(shelfTitle)
   })
 })

@@ -1,9 +1,9 @@
-# Calibre-Web Test Cases
+# Powerside Testing Challenge Test Cases
 
 ## Application Information
-- **Application**: Calibre-Web
+- **Application**: Powerside Testing Challenge
 - **URL**: https://testapp1.andresfloresv.com/
-- **Test Credentials**: Give to user via secure method
+- **Test Credentials**: Given to user via secure method
 
 ## Test Environment
 - **Browser**: Chrome, Firefox, Safari, Edge
