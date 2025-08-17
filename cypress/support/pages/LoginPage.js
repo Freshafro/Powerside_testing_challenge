@@ -46,6 +46,8 @@ class LoginPage extends BaseUtils {
 
   shouldShowLoginPage() {
     cy.get(this.loginHeading).should('be.visible')
+    cy.get(this.usernameInput).should('be.visible')
+    cy.get(this.passwordInput).should('be.visible')
   }
 }
 

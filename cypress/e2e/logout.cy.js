@@ -34,7 +34,5 @@ describe('Powerside Logout Tests', () => {
 
     // Verify user is redirected to login page
     loginPage.shouldShowLoginPage()
-    cy.get('#username').should('be.visible')
-    cy.get('#password').should('be.visible')
   })
 })
