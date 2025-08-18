@@ -1,10 +1,10 @@
 # Cypress specific files
+# IGNORE: Generated files during test execution
 cypress/videos/
 cypress/screenshots/
 cypress/downloads/
 cypress/fixtures/example.json
-cypress/support/e2e.js
-cypress/support/commands.js
+
 
 # Cypress configuration files that might contain sensitive data
 cypress.env.json
@@ -129,13 +129,13 @@ test-results/
 playwright-report/
 test-results.xml
 
-# Cypress test results
-cypress/results/
-cypress/reports/
+# Cypress test results (if using plugins that generate these)
+# cypress/results/
+# cypress/reports/
 
-# Local configuration overrides
-cypress.config.local.js
-cypress.config.local.ts
+# Local configuration overrides (uncomment if needed)
+# cypress.config.local.js
+# cypress.config.local.ts
 
 # Backup files
 *.backup
